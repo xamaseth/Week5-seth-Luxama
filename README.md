@@ -41,8 +41,9 @@ Buttons dynamically hide/show when no flashcards exist.
 Answer Shuffling
 
 Each flashcard’s answers are randomized for every load, ensuring a fresh challenge.
----
+
 🛠️ Tech Stack
+---
 
 Language: Kotlin
 
@@ -55,8 +56,9 @@ UI Components: LinearLayout, RelativeLayout, TextView, ImageView
 Navigation: Intent + Activity lifecycle (onResume)
 
 Extensions: AndroidX (enableEdgeToEdge, ViewCompat, WindowInsetsCompat)
----
+
 🎮 How It Works
+---
 
 Launch App → Loads existing flashcards (random card if available).
 
@@ -76,7 +78,8 @@ Delete Card → 🗑️ button removes current flashcard.
 
 Empty State → If no cards exist, app prompts user to add one.
 
----
+
 Demo.
+---
 
 ![Week5 Seth Luxama](https://github.com/user-attachments/assets/b34fffb2-abd8-4294-bc4d-303299ca7282)
