@@ -41,7 +41,7 @@ Buttons dynamically hide/show when no flashcards exist.
 Answer Shuffling
 
 Each flashcard’s answers are randomized for every load, ensuring a fresh challenge.
-
+---
 🛠️ Tech Stack
 
 Language: Kotlin
@@ -55,7 +55,7 @@ UI Components: LinearLayout, RelativeLayout, TextView, ImageView
 Navigation: Intent + Activity lifecycle (onResume)
 
 Extensions: AndroidX (enableEdgeToEdge, ViewCompat, WindowInsetsCompat)
-
+---
 🎮 How It Works
 
 Launch App → Loads existing flashcards (random card if available).
