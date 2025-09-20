@@ -1,53 +1,82 @@
-# 📱 FlashCard (Week 4 Project -Seth Luxama)
+Week 5 Seth Luxama PIERRE LOUIS
+---
+This project showcases dynamic flashcards with database persistence, navigation between cards, and interactive user feedback for answers.
 
-An interactive Android quiz application built with **Kotlin**. This project demonstrates handling multiple-choice questions, dynamic updates between activities, and user interaction with feedback for correct and incorrect answers.
+🚀 Features
+---
+Flashcard Quiz System
+
+Displays a question with three possible answers.
+
+Provides instant feedback on selection (correct ✅ / incorrect ❌).
+
+Highlights the correct answer when a wrong one is chosen.
+
+Card Management
+
+Add new flashcards via AddCardActivity.
+
+Delete the current flashcard directly from the main screen.
+
+Edit functionality integrated for updating cards (UI present).
+
+Persistent storage with a local FlashcardDatabase.
+
+Navigation & History
+
+Next ➡️ → Loads a random card.
+
+Back ⬅️ → Returns to the previously viewed card (tracked with history).
+
+Prevents repeat cycles by maintaining navigation state.
+
+UI Interactions
+
+Tap the question text to reset answer states.
+
+Toggle extra layout visibility with a button (toggleBtn).
+
+Buttons dynamically hide/show when no flashcards exist.
+
+Answer Shuffling
+
+Each flashcard’s answers are randomized for every load, ensuring a fresh challenge.
+
+🛠️ Tech Stack
+
+Language: Kotlin
+
+Framework: Android SDK
+
+Database: Custom FlashcardDatabase (SQLite wrapper)
+
+UI Components: LinearLayout, RelativeLayout, TextView, ImageView
+
+Navigation: Intent + Activity lifecycle (onResume)
+
+Extensions: AndroidX (enableEdgeToEdge, ViewCompat, WindowInsetsCompat)
+
+🎮 How It Works
+
+Launch App → Loads existing flashcards (random card if available).
+
+Answer Question → Tap one option; feedback shows instantly.
+
+Reset Answers → Tap the question text to reset options.
+
+Navigate Cards →
+
+Next → Random flashcard.
+
+Back → Previously viewed flashcard.
+
+Add Card → ➕ button opens AddCardActivity.
+
+Delete Card → 🗑️ button removes current flashcard.
+
+Empty State → If no cards exist, app prompts user to add one.
 
 ---
+Demo.
 
-## 🚀 Features
-
-- **Interactive Quiz System**
-  - Displays a question and three possible answers.
-  - Provides instant feedback on user selection (correct ✅ / incorrect ❌).
-  - Highlights the correct answer if the wrong option is chosen.
-
-- **Dynamic Question Updates**
-  - Add or update quiz questions through a dedicated `AddCardActivity`.
-  - Updates propagate back to the main screen using `ActivityResultContracts`.
-
-- **UI Interactions**
-  - Toggle visibility of answer options.
-  - Reset answer states with a simple tap on the question.
-
-- **Clean & Reusable Functions**
-  - `toggleLayout()` → Show/Hide quiz options.
-  - `checkAnswer()` → Validate answers and display feedback.
-  - `netwaye()` → Reset answer states.
-  - `openAddCard()` → Navigate to the add/update screen.
-
----
-
-## 🛠️ Tech Stack
-
-- **Language:** Kotlin  
-- **Framework:** Android SDK  
-- **UI Components:** `RelativeLayout`, `LinearLayout`, `TextView`, `ImageView`  
-- **Navigation:** `Intent` + `ActivityResultContracts`  
-- **Extensions:** AndroidX (`enableEdgeToEdge`, `ViewCompat`, `WindowInsetsCompat`)
-
----
-
-
-
-## 🎮 How It Works
-
-1. **Launch App** → Displays a default question with three answers.  
-2. **Select an Answer** → Feedback is shown (correct/incorrect).  
-3. **Tap Question** → Resets answer states for a fresh attempt.  
-4. **Add/Update Question** → Tap ➕ button to edit question and answers.  
-5. **Save Changes** → Returns to main screen with updated question/answers.  
-
----
-Gif 
----
-![Seth Luxama Week4](https://github.com/user-attachments/assets/6952d489-ee7e-4781-92fb-ff21e8fcdc13)
+![Week5 Seth Luxama](https://github.com/user-attachments/assets/b34fffb2-abd8-4294-bc4d-303299ca7282)
