@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Week4Luxama</string>
+    <string name="primaryQuestion">Eske Xama se on bon moun?</string>
+    <string name="primaryanswer1">Non</string>
+    <string name="primaryanswer2">Wi</string>
+    <string name="primaryanswer3">Pa Telman</string>
+
+    <string name="quetionhint">Ajoute on kesyon</string>
+    <string name="hintq1">Repons 1</string>
+    <string name="hintq2">Repons 2</string>
+    <string name="hintq3">Repons 3</string>
+    <string name="propo">Check the right answer</string>
+
+    <string-array name="answer_options">
+        <item>Answer 1</item>
+        <item>Answer 2</item>
+        <item>Answer 3</item>
+    </string-array>
+
+
+</resources>
